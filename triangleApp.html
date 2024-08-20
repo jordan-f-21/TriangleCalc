@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Calculator</title>
+    <link rel="stylesheet" href="triangleApp.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Triangle Calculator</h1>
+        <img src="triangle.jpeg" alt="Triangle Image">
+        <p class="inputTitle">Inputs</p>
+        <div class="input-containter">
+            <input id="input0" class="inputs" onchange="checkInput(0)" placeholder="a = ">
+            <input id="input1" class="inputs" onchange="checkInput(1)" placeholder="b = ">
+            <input id="input2" class="inputs" onchange="checkInput(2)" placeholder="c = ">
+            <input id="input3" class="inputs" onchange="checkInput(3)" placeholder="α = ">
+            <input id="input4" class="inputs" onchange="checkInput(4)" placeholder="β = ">
+            <input id="input5" class="inputs" onchange="checkInput(5)" placeholder="γ = ">
+        </div>
+        <div class="buttons">
+            <button class="calcButton" onclick="solveTriangle()">Calculate!!</button>
+            <button class="clearButton" onclick="clearAll()">Clear</button>
+        </div>
+        <div class="paragraphs-container">
+            <p id="p0" class="paragraphs">a = </p>
+            <p id="p1" class="paragraphs">b = </p>
+            <p id="p2" class="paragraphs">c = </p>
+            <p id="p3" class="paragraphs">α = </p>
+            <p id="p4" class="paragraphs">β = </p>
+            <p id="p5" class="paragraphs">γ = </p>
+        </div>
+        <p style="visibility: hidden;" id="secondTriangleTitle">Second Triangle</p>
+        <div class="hidden-paragraphs-container" style="visibility: hidden;" id="secondTriangleOutput">
+            <p id="hp0" class="hiddenParagraphs">a2 = </p>
+            <p id="hp1" class="hiddenParagraphs">b2 = </p>
+            <p id="hp2" class="hiddenParagraphs">c2 = </p>
+            <p id="hp3" class="hiddenParagraphs">α2 = </p>
+            <p id="hp4" class="hiddenParagraphs">β2 = </p>
+            <p id="hp5" class="hiddenParagraphs">γ2 = </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="triangleApp.js"></script>
+</body>
+</html>
