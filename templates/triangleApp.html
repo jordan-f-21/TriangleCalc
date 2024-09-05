@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle Calculator</title>
-    <link rel="stylesheet" href="triangleApp.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <div class="calculator">
@@ -41,6 +41,6 @@
             <p id="hp5" class="hiddenParagraphs">γ2 = </p>
         </div>
     </div>
-    <script type="text/javascript" src="triangleApp.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
