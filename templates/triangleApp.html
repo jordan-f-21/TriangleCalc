@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle Calculator</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/triangleApp.css') }}">
 </head>
 <body>
     <div class="calculator">
         <h1>Triangle Calculator</h1>
-        <img src="triangle.jpeg" alt="Triangle Image">
+        <img src="{{ url_for('static', filename='images/triangle.jpeg') }}" alt="Triangle Image">
         <p class="inputTitle">Inputs</p>
         <div class="input-containter">
             <input id="input0" class="inputs" onchange="checkInput(0)" placeholder="a = ">
@@ -41,6 +41,6 @@
             <p id="hp5" class="hiddenParagraphs">γ2 = </p>
         </div>
     </div>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/triangleApp.js') }}"></script>
 </body>
 </html>
