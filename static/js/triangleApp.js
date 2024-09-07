@@ -26,7 +26,9 @@ function solveTriangle() {
         // ASA or AAS Case
         [a, b, c, alpha, beta, gamma] = solveASAorAAS(a, b, c, alpha, beta, gamma);
     } else if (angles.length == 3) {
-        console.log("No Triangle Possible.")
+        document.getElementById("output").textContent = "No Triangle Possible.";
+    } else {
+        document.getElementById("output").textContent = "No Triangle Possible.";
     }
     
     // Update values array and outputs
@@ -56,7 +58,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                 if (a > c) {
                     console.log("One Triangle Possible");
                 } else {
-                    console.log("No Triangle Possible");
+                    document.getElementById("output").textContent = "No Triangle Possible.";
                 }
             } else {
                 if (a >= c) {
@@ -72,7 +74,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                     } else if (gamma == 90) {
                         console.log("One Triangle Possible");
                     } else {
-                        console.log("No Triangle Possible");
+                        document.getElementById("output").textContent = "No Triangle Possible.";
                     }
                 }
             }
@@ -86,7 +88,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                 if (a > b) {
                     console.log("One Triangle Possible");
                 } else {
-                    console.log("No Triangle Possible");
+                    document.getElementById("output").textContent = "No Triangle Possible.";
                 }
             } else {
                 if (a >= b) {
@@ -102,7 +104,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                     } else if (gamma == 90) {
                         console.log("One Triangle Possible");
                     } else {
-                        console.log("No Triangle Possible");
+                        document.getElementById("output").textContent = "No Triangle Possible.";
                     }
                 }
             }
@@ -123,7 +125,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                 if (b > c) {
                     console.log("One Triangle Possible");
                 } else {
-                    console.log("No Triangle Possible");
+                    document.getElementById("output").textContent = "No Triangle Possible.";
                 }
             } else {
                 if (b >= c) {
@@ -139,7 +141,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                     } else if (gamma == 90) {
                         console.log("One Triangle Possible");
                     } else {
-                        console.log("No Triangle Possible");
+                        document.getElementById("output").textContent = "No Triangle Possible.";
                     }
                 }
             }
@@ -153,7 +155,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                 if (b > a) {
                     console.log("One Triangle Possible");
                 } else {
-                    console.log("No Triangle Possible");
+                    document.getElementById("output").textContent = "No Triangle Possible.";
                 }
             } else {
                 if (b >= a) {
@@ -169,7 +171,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                     } else if (gamma == 90) {
                         console.log("One Triangle Possible");
                     } else {
-                        console.log("No Triangle Possible");
+                        document.getElementById("output").textContent = "No Triangle Possible.";
                     }
                 }
             }
@@ -190,7 +192,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                 if (c > b) {
                     console.log("One Triangle Possible");
                 } else {
-                    console.log("No Triangle Possible");
+                    document.getElementById("output").textContent = "No Triangle Possible.";
                 }
             } else {
                 if (c >= b) {
@@ -206,7 +208,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                     } else if (gamma == 90) {
                         console.log("One Triangle Possible");
                     } else {
-                        console.log("No Triangle Possible");
+                        document.getElementById("output").textContent = "No Triangle Possible.";
                     }
                 }
             }
@@ -220,7 +222,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                 if (c > a) {
                     console.log("One Triangle Possible");
                 } else {
-                    console.log("No Triangle Possible");
+                    document.getElementById("output").textContent = "No Triangle Possible.";
                 }
             } else {
                 if (c >= a) {
@@ -236,7 +238,7 @@ function solveSASorSSA(a, b, c, alpha, beta, gamma) {
                     } else if (gamma == 90) {
                         console.log("One Triangle Possible");
                     } else {
-                        console.log("No Triangle Possible");
+                        document.getElementById("output").textContent = "No Triangle Possible.";
                     }
                 }
             }
@@ -337,4 +339,8 @@ function clearAll() {
     // Hides Second Triangle Outputs
     document.getElementById('secondTriangleTitle').style.visibility = 'hidden';
     document.getElementById('secondTriangleOutput').style.visibility = 'hidden';
+
+    values = ["", "", "", "", "", ""];
+
+    document.getElementById("output").textContent = "Inputs";
 }
